@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyPinCell" id="eAQ-Dx-jAa" customClass="PinCollectionViewCell" customModule="PinViewTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="51" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="892-9R-BhQ" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9g-Tm-rR6" userLabel="Pin Field" customClass="MyPinField" customModule="PinViewTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="400" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJL-QN-Hor">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="50" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fb3-EW-iuv" userLabel="Underline">
+                                <rect key="frame" x="0.0" y="47" width="50" height="3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="Vf9-ei-j0T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QJL-QN-Hor" secondAttribute="trailing" id="3bp-eW-tS8"/>
+                            <constraint firstItem="Fb3-EW-iuv" firstAttribute="leading" secondItem="892-9R-BhQ" secondAttribute="leading" id="4SN-RW-13j"/>
+                            <constraint firstAttribute="bottom" secondItem="QJL-QN-Hor" secondAttribute="bottom" id="CjB-oz-weV"/>
+                            <constraint firstAttribute="bottom" secondItem="v9g-Tm-rR6" secondAttribute="bottom" id="DB1-qN-BRt"/>
+                            <constraint firstAttribute="trailing" secondItem="v9g-Tm-rR6" secondAttribute="trailing" id="I0J-ep-JhD"/>
+                            <constraint firstItem="v9g-Tm-rR6" firstAttribute="top" secondItem="892-9R-BhQ" secondAttribute="top" id="Xk9-kM-PPv"/>
+                            <constraint firstItem="QJL-QN-Hor" firstAttribute="leading" secondItem="892-9R-BhQ" secondAttribute="leading" id="Zk9-9z-X5Z"/>
+                            <constraint firstItem="v9g-Tm-rR6" firstAttribute="leading" secondItem="892-9R-BhQ" secondAttribute="leading" id="cdd-ot-VPW"/>
+                            <constraint firstAttribute="bottom" secondItem="Fb3-EW-iuv" secondAttribute="bottom" id="hPd-0Q-5dH"/>
+                            <constraint firstAttribute="trailing" secondItem="Fb3-EW-iuv" secondAttribute="trailing" id="oM3-99-uoD"/>
+                            <constraint firstItem="QJL-QN-Hor" firstAttribute="top" secondItem="892-9R-BhQ" secondAttribute="top" id="x4j-Wx-FZL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="892-9R-BhQ" firstAttribute="leading" secondItem="eAQ-Dx-jAa" secondAttribute="leading" id="LEz-DE-djC"/>
+                <constraint firstItem="892-9R-BhQ" firstAttribute="top" secondItem="eAQ-Dx-jAa" secondAttribute="top" id="TXe-IB-ZgW"/>
+                <constraint firstAttribute="trailing" secondItem="892-9R-BhQ" secondAttribute="trailing" id="gFw-IT-1N7"/>
+                <constraint firstAttribute="bottom" secondItem="892-9R-BhQ" secondAttribute="bottom" id="wba-Dh-uFi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="7vp-BQ-Spm"/>
+            <connections>
+                <outlet property="containerView" destination="892-9R-BhQ" id="j7H-Kw-eiG"/>
+                <outlet property="pinField" destination="v9g-Tm-rR6" id="Nii-4c-8oa"/>
+                <outlet property="pinLabel" destination="QJL-QN-Hor" id="LU1-Of-1me"/>
+                <outlet property="underlineView" destination="Fb3-EW-iuv" id="0Nc-KD-rCH"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-38.169642857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>
